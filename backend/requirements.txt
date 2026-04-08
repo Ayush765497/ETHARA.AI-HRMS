@@ -1,0 +1,11 @@
+flask
+flask-restful
+flask-cors
+flask-jwt-extended
+flask-sqlalchemy
+python-dotenv
+flask-socketio
+redis
+cloudinary
+flask-migrate
+werkzeug
