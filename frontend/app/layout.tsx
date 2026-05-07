@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
-  title: 'Next AI HRMS - Human Resource Management System',
+  title: 'ETHARA.AI HRMS - Human Resource Management System',
   description: 'Manage all your HR operations from one place',
 };
 

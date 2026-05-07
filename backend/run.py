@@ -5,7 +5,7 @@ app = create_app()
 
 if __name__ == '__main__':
     print("=" * 50)
-    print("  Next AI HRMS Backend Starting...")
+    print("  ETHARA.AI HRMS Backend Starting...")
     print("  URL: http://localhost:5000")
     print("  DB:  SQLite (hrms.db) - no PostgreSQL needed")
     print("=" * 50)

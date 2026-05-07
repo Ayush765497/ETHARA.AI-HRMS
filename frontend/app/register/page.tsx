@@ -46,7 +46,7 @@ export default function RegisterPage() {
       if (!token) throw new Error('No token received');
       localStorage.setItem('hrms_token', token);
       localStorage.setItem('hrms_user', JSON.stringify(user));
-      toast.success('Account created! Welcome to XCELTECH.');
+      toast.success('Account created! Welcome to ETHARA.AI.');
       router.push('/employee/dashboard');
     } catch (err: any) {
       const msg = err?.response?.data?.message || err?.message || 'Registration failed';
@@ -65,9 +65,9 @@ export default function RegisterPage() {
       >
         <div className="flex items-center gap-2 mb-12">
           <div className="w-9 h-9 bg-yellow-400 rounded-lg flex items-center justify-center">
-            <span className="text-blue-900 font-black text-sm">N</span>
+            <span className="text-blue-900 font-black text-sm">E</span>
           </div>
-          <span className="font-bold text-white text-xl tracking-wide">Next AI</span>
+          <span className="font-bold text-white text-xl tracking-wide">ETHARA.AI</span>
         </div>
         <h2 className="text-white text-4xl font-bold leading-tight mb-4">HR Management Platform</h2>
         <div className="w-12 h-1 mb-4 rounded" style={{ background: '#f5a623' }} />
@@ -85,7 +85,7 @@ export default function RegisterPage() {
       {/* Right Form */}
       <div className="flex-1 flex items-center justify-center bg-white px-8 py-10">
         <div className="w-full max-w-lg">
-          <h1 className="text-2xl font-bold text-blue-900 mb-1">Welcome to Next AI</h1>
+          <h1 className="text-2xl font-bold text-blue-900 mb-1">Welcome to ETHARA.AI</h1>
           <p className="text-gray-500 text-sm mb-8">Register your account</p>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>

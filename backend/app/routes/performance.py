@@ -25,6 +25,7 @@ def create_goal():
     from datetime import date
     goal = Goal(employee_id=data['employee_id'], title=data['title'],
                 description=data.get('description'),
+                project_id=data.get('project_id') if data.get('project_id') else None,
                 target_date=date.fromisoformat(data['target_date']) if data.get('target_date') else None)
     db.session.add(goal)
     db.session.flush()

@@ -22,10 +22,11 @@ type NavSection = {
 
 const adminNavSections: NavSection[] = [
   {
-    label: 'Features',
+    label: 'Management',
     items: [
       { href: '/admin/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-      // { href: '/messages', icon: MessageSquare, label: 'Messages', badge: 3 },
+      { href: '/projects', icon: Briefcase, label: 'Projects' },
+      { href: '/performance', icon: BarChart2, label: 'Tasks & Performance' },
     ]
   },
   {
@@ -42,7 +43,6 @@ const adminNavSections: NavSection[] = [
       { href: '/employees', icon: UserCheck, label: 'Employee Management' },
       { href: '/leaves', icon: BookOpen, label: 'Leave Management' },
       { href: '/attendance', icon: BarChart2, label: 'Attendance' },
-      { href: '/performance', icon: BarChart2, label: 'Performance Management' },
       { href: '/payroll', icon: DollarSign, label: 'Payroll Management' },
       { href: '/documents', icon: FileText, label: 'Document Management' },
       { href: '/announcements', icon: Megaphone, label: 'Engagement System' },
@@ -93,9 +93,9 @@ export default function Sidebar({ onClose }: { onClose?: () => void }) {
       <div className="px-5 py-5 border-b border-white/10">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center">
-            <span className="text-blue-900 font-black text-sm">N</span>
+            <span className="text-blue-900 font-black text-sm">E</span>
           </div>
-          <span className="font-bold text-white text-lg tracking-wide">Next AI</span>
+          <span className="font-bold text-white text-lg tracking-wide">ETHARA.AI</span>
         </div>
       </div>
 

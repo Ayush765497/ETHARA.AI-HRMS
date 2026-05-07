@@ -5,6 +5,7 @@ class Goal(db.Model):
     __tablename__ = 'goals'
     id = db.Column(db.Integer, primary_key=True)
     employee_id = db.Column(db.Integer, db.ForeignKey('employees.id'), nullable=False)
+    project_id = db.Column(db.Integer, db.ForeignKey('projects.id'), nullable=True)
     title = db.Column(db.String(200), nullable=False)
     description = db.Column(db.Text)
     target_date = db.Column(db.Date)
@@ -12,11 +13,14 @@ class Goal(db.Model):
     status = db.Column(db.String(30), default='in_progress')  # in_progress, completed, overdue
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     employee = db.relationship('Employee', backref='goals', lazy=True)
+    project = db.relationship('Project', backref='tasks', lazy=True)
     key_results = db.relationship('KeyResult', backref='goal', lazy=True, cascade='all, delete-orphan')
 
     def to_dict(self):
         return {
             'id': self.id, 'employee_id': self.employee_id,
+            'project_id': self.project_id,
+            'project_name': self.project.name if self.project else 'Unassigned',
             'employee_name': f"{self.employee.first_name} {self.employee.last_name}" if self.employee else None,
             'title': self.title, 'description': self.description,
             'target_date': self.target_date.isoformat() if self.target_date else None,

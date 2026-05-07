@@ -47,6 +47,7 @@ def create_app(config_class=Config):
     from app.routes.announcements import announcements_bp
     from app.routes.courses import courses_bp
     from app.routes.dashboard import dashboard_bp
+    from app.routes.projects import projects_bp
 
     app.register_blueprint(auth_bp, url_prefix='/auth')
     app.register_blueprint(employees_bp, url_prefix='/employees')
@@ -60,15 +61,16 @@ def create_app(config_class=Config):
     app.register_blueprint(announcements_bp, url_prefix='/announcements')
     app.register_blueprint(courses_bp, url_prefix='/courses')
     app.register_blueprint(dashboard_bp, url_prefix='/dashboard')
+    app.register_blueprint(projects_bp, url_prefix='/projects')
 
     # Health check
     @app.route('/')
     def health():
-        return {'status': 'Next AI HRMS API running', 'version': '1.0.0'}
+        return {'status': 'ETHARA.AI HRMS API running', 'version': '1.0.0'}
 
     # Import models so SQLAlchemy knows about them
     with app.app_context():
-        from app.models import user, employee, attendance, leave, recruitment, performance, payroll, document,  announcement, course
+        from app.models import user, employee, attendance, leave, recruitment, performance, payroll, document, announcement, course, project
         db.create_all()  # Auto-create tables on startup
 
     return app

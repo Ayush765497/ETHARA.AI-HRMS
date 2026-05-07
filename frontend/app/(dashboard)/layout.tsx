@@ -22,13 +22,13 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
     // Define allowed routes for each role
     const adminRoutes = [
-      '/dashboard', '/employees', '/leaves', '/attendance', '/performance',
+      '/admin/dashboard', '/dashboard', '/projects', '/employees', '/leaves', '/attendance', '/performance',
       '/payroll', '/documents', '/announcements', '/courses',
       '/recruitment/jobs', '/recruitment/candidates', '/recruitment/resumes'
     ];
 
     const employeeRoutes = [
-      '/dashboard', '/leaves', '/attendance', '/payroll', '/documents', '/announcements'
+      '/employee/dashboard', '/dashboard', '/leaves', '/attendance', '/payroll', '/documents', '/announcements'
     ];
 
     // Check if current path is allowed for user's role
@@ -58,9 +58,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         style={{ background: '#0f1b2d' }}
       >
         <div className="w-14 h-14 bg-yellow-400 rounded-xl flex items-center justify-center mb-4 animate-pulse">
-          <span className="text-blue-900 font-black text-2xl">N</span>
+          <span className="text-blue-900 font-black text-2xl">E</span>
         </div>
-        <p className="text-white text-sm font-medium">Loading Next AI...</p>
+        <p className="text-white text-sm font-medium">Loading ETHARA.AI...</p>
       </div>
     );
   }
@@ -89,7 +89,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
         {/* Breadcrumb */}
         <div className="px-6 py-2 text-xs text-gray-400 border-b border-gray-200 bg-white flex items-center gap-1">
-          <span className="text-blue-700 font-medium">XCELTECH</span>
+          <span className="text-blue-700 font-medium">ETHARA.AI</span>
           {crumbs.map((c, i) => (
             <span key={i} className="flex items-center gap-1">
               <span className="text-gray-300">/</span>

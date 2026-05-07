@@ -39,7 +39,7 @@ export default function LoginPage() {
   };
 
   const fillDemo = () => {
-    setForm({ email: 'admin@xceltech.com', password: 'admin123' });
+    setForm({ email: 'admin@ethara.ai', password: 'admin123' });
   };
 
   return (
@@ -49,9 +49,9 @@ export default function LoginPage() {
         <div className="w-full max-w-md">
           <div className="flex items-center gap-2 mb-10">
             <div className="w-9 h-9 bg-yellow-400 rounded-lg flex items-center justify-center">
-              <span className="text-blue-900 font-black text-sm">X</span>
+              <span className="text-blue-900 font-black text-sm">E</span>
             </div>
-            <span className="font-bold text-blue-900 text-xl tracking-wide">Next AI</span>
+            <span className="font-bold text-blue-900 text-xl tracking-wide">ETHARA.AI</span>
           </div>
           <h1 className="text-3xl font-bold text-gray-900 mb-1">Login</h1>
           <p className="text-gray-500 text-sm mb-8">Login to your account.</p>
@@ -97,7 +97,7 @@ export default function LoginPage() {
           <p className="text-center text-sm text-gray-500 mt-6">
             Don&apos;t have an account?{' '}
             <Link href="/register" className="text-blue-700 font-semibold hover:underline">
-              Join Next AI today.
+              Join ETHARA.AI today.
             </Link>
           </p>
           {/* Demo credentials */}
@@ -105,7 +105,7 @@ export default function LoginPage() {
             onClick={fillDemo}
             className="mt-5 w-full p-3 bg-blue-50 rounded-lg text-xs text-blue-700 hover:bg-blue-100 transition text-left border border-blue-100"
           >
-            <strong>Demo credentials</strong> (click to fill): admin@xceltech.com / admin123
+            <strong>Demo credentials</strong> (click to fill): admin@ethara.ai / admin123
           </button>
         </div>
       </div>
