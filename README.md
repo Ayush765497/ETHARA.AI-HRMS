@@ -1,34 +1,207 @@
-# ETHARA.AI — Team Task Manager & HRMS
+# ETHARA.AI — HRMS & Team Task Manager
 
-A high-end, full-stack Human Resource Management System (HRMS) and Team Task Manager.
+ETHARA.AI is a full-stack Human Resource Management System (HRMS) and Team Task Management platform built to simplify employee management, task tracking, attendance handling, payroll operations, and team collaboration in one place.
 
-## 🚀 Key Features
-- **Project & Task Management**: Create projects, assign tasks to team members, and track progress with interactive charts.
-- **Authentication**: Secure Signup/Login with JWT.
-- **Role-Based Access**: Admin and Member (Employee) roles.
-- **Employee Management**: Full directory, recruitment, and profile management.
-- **Leave & Attendance**: Automated tracking and approval workflows.
-- **Payroll**: Payslip generation and management.
-- **Real-time Announcements**: Stay updated with team news.
+The project is built using Flask, Next.js, and Tailwind CSS with a clean and modern interface designed for teams and organizations.
 
-## ⚙️ Requirements
-- **Backend**: Python (Flask), SQLite, JWT.
-- **Frontend**: Next.js, Tailwind CSS, Lucide Icons.
-- **Brand**: ETHARA.AI
+---
 
-## Getting Started
+# 🚀 Features
 
-### Backend
-1. `cd backend`
-2. `pip install -r requirements.txt`
-3. `python seed.py` (Initialize database with ETHARA.AI demo data)
-4. `python run.py`
+## 👥 Employee Management
+- Manage employee profiles
+- Employee directory system
+- Recruitment and onboarding support
+- Role-based access management
 
-### Frontend
-1. `cd frontend`
-2. `npm install`
-3. `npm run dev`
+## 📋 Project & Task Management
+- Create and manage projects
+- Assign tasks to employees
+- Track task progress
+- Team productivity dashboard
 
-### Demo Credentials
-- **Admin**: `admin@ethara.ai` / `admin123`
-- **Employee**: `john.doe@ethara.ai` / `password123`
+## 🔐 Authentication & Security
+- Secure JWT Authentication
+- Login & Signup system
+- Admin and Employee roles
+
+## 🕒 Attendance & Leave Management
+- Attendance tracking
+- Leave application system
+- Leave approval workflows
+
+## 💰 Payroll Management
+- Salary management
+- Payslip generation
+- Payroll records
+
+## 📢 Real-Time Updates
+- Team announcements
+- Real-time notifications using Socket.IO
+
+---
+
+# 🛠️ Tech Stack
+
+## Backend
+- Python
+- Flask
+- Flask-SQLAlchemy
+- Flask-JWT-Extended
+- Flask-SocketIO
+- SQLite
+
+## Frontend
+- Next.js
+- React.js
+- Tailwind CSS
+- Lucide Icons
+
+---
+
+# 📂 Project Structure
+
+```bash
+ETHARA.AI-HRMS/
+│
+├── backend/
+│   ├── app/
+│   ├── migrations/
+│   ├── run.py
+│   ├── seed.py
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── components/
+│   ├── pages/
+│   ├── public/
+│   └── package.json
+│
+└── README.md
+```
+
+---
+
+# ⚙️ Installation Guide
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/Ayush765497/ETHARA.AI-HRMS.git
+cd ETHARA.AI-HRMS
+```
+
+---
+
+# 🔧 Backend Setup
+
+## Install Dependencies
+
+```bash
+cd backend
+pip install -r requirements.txt
+```
+
+## Initialize Database
+
+```bash
+python seed.py
+```
+
+## Run Backend Server
+
+```bash
+python run.py
+```
+
+Backend runs on:
+
+```bash
+http://localhost:5000
+```
+
+---
+
+# 💻 Frontend Setup
+
+## Install Frontend Dependencies
+
+```bash
+cd frontend
+npm install
+```
+
+## Run Frontend
+
+```bash
+npm run dev
+```
+
+Frontend runs on:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+# 🔑 Demo Credentials
+
+## Admin
+
+```bash
+Email: admin@ethara.ai
+Password: admin123
+```
+
+## Employee
+
+```bash
+Email: john.doe@ethara.ai
+Password: password123
+```
+
+---
+
+# 🚀 Deployment
+
+## Backend Deployment
+- Render
+- Railway
+- AWS EC2
+
+## Frontend Deployment
+- Vercel
+- Netlify
+
+---
+
+# 📈 Future Improvements
+
+- AI-based HR assistant
+- Resume screening
+- Performance analytics
+- Mobile application support
+- Advanced reporting dashboard
+
+---
+
+# 🤝 Contributing
+
+```bash
+Fork → Create Branch → Commit Changes → Push → Pull Request
+```
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👨‍💻 Developed By
+
+### Ayush Kumar
+
+Modern HRMS and team collaboration platform for organizations and startups.
