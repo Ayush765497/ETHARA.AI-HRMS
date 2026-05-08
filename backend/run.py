@@ -1,7 +1,9 @@
+from flask_cors import CORS
 from app import create_app
 from app.extensions import socketio
 
 app = create_app()
+CORS(app)
 
 if __name__ == '__main__':
     print("=" * 50)
