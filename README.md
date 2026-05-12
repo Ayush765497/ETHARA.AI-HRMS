@@ -6,6 +6,8 @@ The project is built using Flask, Next.js, and Tailwind CSS with a clean and mod
 
 ---
 
+Live demo : https://ethara-ai-hrms-lilac.vercel.app/login
+
 # 🚀 Features
 
 ## 👥 Employee Management
